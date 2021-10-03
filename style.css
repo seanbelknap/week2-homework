@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+
+
+#cssWindow{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 1em;
+    overflow: hidden;
+
+}
+
+#imgSlider{
+    display: flex;
+    animation-name: carousel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes carousel{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-2500px);
+    }
+}
+    
+#jsWindow{
+    display: flex;
+    width: 500px;
+    height: 500px;
+   
+   
+}
+#imgHolder{
+    width: 500px;
+    overflow: hidden;
+   
+}
+
+#rightButton{
+    position: relative;
+    bottom: 19.3em;
+    right: -33.1em;
+}
+
+#leftButton{
+    position: relative;
+    top: 20em;
+}
+
